@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif
+
+}
+
+body,html{
+    overflow-x: hidden;
+}
+
+/*Bagian Header*/
+.header{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.40));
+    background-color: rgb(205, 92, 92) ;
+    background-position: center;
+    background-size: cover;
+}
+
+.nav{
+    width: 90%;
+    padding: 30px 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.Logo{
+    width: auto;
+    height: 60px; 
+    margin: 20px; 
+    border-radius: 70%;
+    object-fit: cover; 
+
+
+}
+
+.nav-menu li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+.nav-menu li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(243, 240, 255);
+    font-weight: 600;
+}
+
+
+.nav-menu a:hover{
+    color: var(--main-color);
+}
+
+
+
+
+/*Bagian Home*/
+
+/*Bagian Conten*/
+.conten-text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: whitesmoke;
+    font-size: x-large;
+    z-index: 2;
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.intro h1{
+    font-size: 3em;
+    margin: 0;
+}
+
+.intro h3{
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.intro p{
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.conten-vidio{
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    overflow: hidden; 
+}
+
+.conten-vidio video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/*Bagian Body*/
+.body{
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px ;
+}
+
+.body-text{
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: left;
+}
+
+.body-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+.body-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.body-gambar{
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.body-gambar img{
+    width: 900px;
+    height: 500px;
+}
+
+.body-vidio{
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: left; 
+}
+
+.body-vidio h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+.body-ul li{
+    list-style: none;
+    margin: 10px;
+}
+
+.body-ul li a{
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 10;
+    letter-spacing: 5px;
+}
+
+
+.nav-menu a:hover{
+    color: var(--main-color);
+}
+
+/* Hamburger Icon */
+.menu-toggle {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 150px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*Bagian About*/
+.body-about {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+.text-about {
+    flex: 2;
+    margin-right: 20px;
+}
+.text-about h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+.text-about p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #555555;
+}
+.gambar-about {
+    flex: 1;
+}
+.gambar-about img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/*Bagian Kontak*/
+.body-kontak {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-kontak{
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: left;
+}
+.text-kontak h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text-kontak p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.text-kontak a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.text-kontak a:hover {
+    text-decoration: underline;
+}
+
+.social-kontak p {
+    margin-bottom: 5px;
+}
+
+.kontok-alamat{
+    max-width: 100%;
+}
+
+iframe {
+    border: none;
+}
+
+
+
+/*Bagian Footer*/
+.bottom-bar{
+    background: rgb(205, 92, 92);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+} 
